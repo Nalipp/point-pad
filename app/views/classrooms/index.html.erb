@@ -1,0 +1,6 @@
+<h1 class="well">Classrooms</h1>
+<% @classrooms.each do |classroom| %>
+  <div class="container">
+    <h3><%= link_to classroom.classroom_name, root_path %></h3>
+  </div>
+<% end %>

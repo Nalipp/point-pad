@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
-  root            'pages#home'
-  get  'index' => 'classrooms#index'
+  resources :classrooms
+  root                'pages#home'
+  #get  'index'     => 'classrooms#index'
+  #get  'show'      => 'classrooms#show'
 end
